@@ -116,9 +116,9 @@ export default function ICAIResults() {
               </li>
               
               <li>
-                <p align="center">Enter the text as shown in the below box</p> 
+                <p style={{ textAlign: 'center' }}>Enter the text as shown in the below box</p> 
                 <label className="captcha-label">
-                  <img src={CAPTCHAS[captchaIndex].src} height="32" align="absmiddle" alt="Captcha" /> &nbsp;
+                  <img src={CAPTCHAS[captchaIndex].src} height="32" style={{ verticalAlign: 'middle' }} alt="Captcha" /> &nbsp;
                 </label>
                 <input 
                   size={10} 
@@ -141,7 +141,7 @@ export default function ICAIResults() {
             </ul>
           </form>
         </div>
-        <p align="center"><Link href="/caresult">Home</Link></p>
+        <p style={{ textAlign: 'center' }}><Link href="/caresult">Home</Link></p>
       </div>
       
       <div className="footer">
