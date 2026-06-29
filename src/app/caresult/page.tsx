@@ -19,7 +19,7 @@ export default function HomeResults() {
         <ul className="result-list">
           <li>
             <div className="exam_name">
-              <Link href="/caresult/ipc">Intermediate Examination</Link> : May 2026
+              <Link href="/caresult/ipc">Foundation Examination</Link> : May 2026
             </div>
             <div className="annu_date">Announced on 24th June 2026</div>
           </li>
