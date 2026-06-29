@@ -19,7 +19,7 @@ export default function ICAIResults() {
   const [regNo, setRegNo] = useState("");
   const [captchaInput, setCaptchaInput] = useState("");
   const [errors, setErrors] = useState<string[]>([]);
-  
+
   // Pick a random captcha on mount
   useEffect(() => {
     setCaptchaIndex(Math.floor(Math.random() * CAPTCHAS.length));
@@ -36,11 +36,11 @@ export default function ICAIResults() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const newErrors: string[] = [];
-    
+
     if (rollNo.length !== 6) {
       newErrors.push("Invalid Roll No.");
     }
-    
+
     if (captchaInput.toLowerCase() !== CAPTCHAS[captchaIndex].text) {
       newErrors.push("Invalid Security Code");
     }
@@ -51,8 +51,8 @@ export default function ICAIResults() {
       setCaptchaIndex(Math.floor(Math.random() * CAPTCHAS.length));
       return;
     }
-    
-    if (rollNo === "592783" && regNo === "12345678") {
+
+    if (rollNo === "592783" && regNo === "SRO0914174") {
       setErrors([]);
       router.push(`/caresult/ipc/${rollNo}`);
     } else {
@@ -73,9 +73,9 @@ export default function ICAIResults() {
           <span>Examination Results, May 2026</span>
         </div>
       </div>
-      
+
       <div className="content">
-        <div className="heading2">Intermediate Examination Results </div>
+        <div className="heading2">Foundation Examination Results </div>
         <div className="result_form">
           <p>Enter your 6 Digit Roll Number and Registration No. to check your results</p>
           <form action="" method="POST" id="form1" name="form1" onSubmit={handleSubmit}>
@@ -88,53 +88,53 @@ export default function ICAIResults() {
             )}
             <ul>
               <li>
-                <label>Roll No.</label> 
-                <input 
-                  maxLength={6} 
-                  size={6} 
-                  name="rollno" 
-                  id="rollno" 
-                  className="form-control" 
-                  autoComplete="off" 
+                <label>Roll No.</label>
+                <input
+                  maxLength={6}
+                  size={6}
+                  name="rollno"
+                  id="rollno"
+                  className="form-control"
+                  autoComplete="off"
                   value={rollNo}
                   onChange={(e) => setRollNo(e.target.value)}
                 />
               </li>
-              
+
               <li>
-                <label>Registration No.</label> 
-                <input 
-                  maxLength={10} 
-                  size={10} 
-                  name="regno" 
-                  id="regno" 
-                  className="form-control" 
-                  autoComplete="off" 
+                <label>Registration No.</label>
+                <input
+                  maxLength={10}
+                  size={10}
+                  name="regno"
+                  id="regno"
+                  className="form-control"
+                  autoComplete="off"
                   value={regNo}
                   onChange={(e) => setRegNo(e.target.value)}
                 />
               </li>
-              
+
               <li>
-                <p style={{ textAlign: 'center' }}>Enter the text as shown in the below box</p> 
+                <p style={{ textAlign: 'center' }}>Enter the text as shown in the below box</p>
                 <label className="captcha-label">
                   <img src={CAPTCHAS[captchaIndex].src} height="32" style={{ verticalAlign: 'middle' }} alt="Captcha" /> &nbsp;
                 </label>
-                <input 
-                  size={10} 
-                  name="scode" 
-                  className="form-control" 
-                  type="text" 
+                <input
+                  size={10}
+                  name="scode"
+                  className="form-control"
+                  type="text"
                   autoComplete="off"
                   value={captchaInput}
                   onChange={(e) => setCaptchaInput(e.target.value)}
                 />
                 <span className="inst">(For preventing automated submissions)</span>
               </li>
-              
+
               <li className="btn-group">
                 <label className="desktop-only">&nbsp;</label>
-                <input value="CLEAR" className="ButtC" name="reset" type="button" onClick={handleClear} />        
+                <input value="CLEAR" className="ButtC" name="reset" type="button" onClick={handleClear} />
                 <input value="Submit" className="Butt" name="submit" type="submit" />
                 <input type="hidden" name="session_value" value="bb13163fa97103ca2fadd2bc64f2af53" />
               </li>
@@ -143,11 +143,11 @@ export default function ICAIResults() {
         </div>
         <p style={{ textAlign: 'center' }}><Link href="/caresult">Home</Link></p>
       </div>
-      
+
       <div className="footer">
         <div className="strip"><a href="#">Disclaimer</a></div>
         <div className="disclaimer">Disclaimer:The result given is correct at the time of release of the result by the Institute which accepts no responsibility thereafter for errors or omissions caused as a result of their transmission via the Internet or their downloading or printing by the user. No material from this web site can be copied, reproduced, published, uploaded, posted, transmitted or distributed or dealt with in any manner, unless expressly authorized. Users are not permitted to change, modify or prepare derivative works from the content of this site. For any clarifications / confirmation please address your enquiries to Joint Secretary (Examinations),The Institute of Chartered Accountants of India, 'ICAI BHAWAN', Post Box No. 7112, Indraprastha Marg, New Delhi - 110 002</div>
-      </div>        
+      </div>
     </div>
   );
 }
