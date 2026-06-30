@@ -27,13 +27,13 @@ export default function HomeResults() {
             <div className="exam_name">
               <Link href="#">Intermediate Examination - UNITS</Link> : May 2026
             </div>
-            <div className="annu_date">Announced on 24th June 2026</div>
+            <div className="annu_date">Announced on 3rd July 2026</div>
           </li>
           <li>
             <div className="exam_name">
-              <Link href="#">Final</Link> : May 2026
+              <Link href="#">Final</Link> : July 2026
             </div>
-            <div className="annu_date">Announced on 18th June 2026</div>
+            <div className="annu_date">Announced on 3rd July 2026</div>
           </li>
         </ul>
 
@@ -43,13 +43,13 @@ export default function HomeResults() {
             <div className="exam_name">
               <Link href="#">Intermediate Examination</Link> : May 2026
             </div>
-            <div className="annu_date">Announced on 24th June 2026</div>
+            <div className="annu_date">Announced on 3rd July 2026</div>
           </li>
           <li>
             <div className="exam_name">
               <Link href="#">Final</Link> : May 2026
             </div>
-            <div className="annu_date">Announced on 18th June 2026</div>
+            <div className="annu_date">Announced on 3rd July 2026</div>
           </li>
         </ul>
       </div>
