@@ -33,7 +33,7 @@ export default function HomeResults() {
             <div className="exam_name">
               <Link href="#">Final</Link> : July 2026
             </div>
-            <div className="annu_date">Announced on 3rd June 2026</div>
+            <div className="annu_date">Announced on 18th June 2026</div>
           </li>
         </ul>
 
