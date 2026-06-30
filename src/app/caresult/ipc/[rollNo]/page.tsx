@@ -26,7 +26,7 @@ export default function ResultPage() {
         </div>
 
         <div style={{ textAlign: 'center', color: '#93008e', fontSize: '24px', marginBottom: '20px' }}>
-          Intermediate Examination Results
+          Foundation Examination Results
         </div>
 
         <div style={{ textAlign: 'right', color: '#444', fontSize: '15px', marginBottom: '10px' }}>
@@ -51,7 +51,7 @@ export default function ResultPage() {
             <tr style={{ backgroundColor: '#ffffff', borderBottom: '1px solid #ddd' }}>
               <td style={{ padding: '10px', color: '#333' }}>Paper 1</td>
               <td style={{ padding: '10px', color: '#333' }}>Principles and Practice of Accounting</td>
-              <td style={{ padding: '10px', color: '#333' }}>052</td>
+              <td style={{ padding: '10px', color: '#333' }}>050</td>
             </tr>
             <tr style={{ backgroundColor: '#eeeeee', borderBottom: '1px solid #ddd' }}>
               <td style={{ padding: '10px', color: '#333' }}>Paper 2</td>
@@ -66,7 +66,7 @@ export default function ResultPage() {
             <tr style={{ backgroundColor: '#eeeeee', borderBottom: '1px solid #ddd' }}>
               <td style={{ padding: '10px', color: '#333' }}>Paper 4</td>
               <td style={{ padding: '10px', color: '#333' }}>Business Economics &amp; Business and Commercial Knowledge</td>
-              <td style={{ padding: '10px', color: '#333' }}>051</td>
+              <td style={{ padding: '10px', color: '#333' }}>052</td>
             </tr>
             <tr style={{ backgroundColor: '#ffffff', borderBottom: '1px solid #ddd' }}>
               <td style={{ padding: '10px', fontWeight: 'bold', color: '#333' }}>Total</td>

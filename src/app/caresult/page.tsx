@@ -21,7 +21,7 @@ export default function HomeResults() {
             <div className="exam_name">
               <Link href="/caresult/ipc">Foundation Examination</Link> : May 2026
             </div>
-            <div className="annu_date">Announced on 24th June 2026</div>
+            <div className="annu_date">Announced on 3rd July 2026</div>
           </li>
           <li>
             <div className="exam_name">
