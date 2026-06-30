@@ -71,7 +71,7 @@ export default function ResultPage() {
             <tr style={{ backgroundColor: '#ffffff', borderBottom: '1px solid #ddd' }}>
               <td style={{ padding: '10px', fontWeight: 'bold', color: '#333' }}>Total</td>
               <td style={{ padding: '10px' }}></td>
-              <td style={{ padding: '10px', color: '#333' }}>205</td>
+              <td style={{ padding: '10px', color: '#333' }}>204</td>
             </tr>
             <tr style={{ backgroundColor: '#eeeeee' }}>
               <td colSpan={3} style={{ padding: '10px', fontWeight: 'bold', color: '#333' }}>Result: PASS</td>
