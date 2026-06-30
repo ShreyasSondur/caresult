@@ -16,7 +16,7 @@ export default function ResultPage() {
         </div>
         <div className="header-right">
           The Institute of Chartered Accountants of India
-          <span>Examination Results, May 2026</span>
+          <span>Examination Results, July 2026</span>
         </div>
       </div>
 
